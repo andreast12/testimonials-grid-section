@@ -150,5 +150,43 @@ h2 {
 	Attribution
 ================ */
 .attribution {
-	margin-top: 3rem;
+	margin-top: 10vmin;
+}
+
+
+
+
+/* =====================
+	Desktop Version
+=================== */
+@media (min-width: 992px) {
+	/* ==================
+		Global
+	================ */
+	body {
+		margin-top: 10vmin;
+	}
+
+	.container {
+		width: 80%;
+		max-width: none;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: 
+			"daniel daniel jonathan kira"
+			"jeanette patrick patrick kira";
+	}
+
+	.daniel {grid-area: daniel;}
+	.jonathan {grid-area: jonathan;}
+	.jeanette {grid-area: jeanette;}
+	.patrick {grid-area: patrick;}
+	.kira {grid-area: kira;}
+
+
+	/* ==================
+		Attribution
+	================ */
+	.attribution {
+		margin-top: 10vmin;
+	}
 }
